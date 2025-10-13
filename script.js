@@ -35,7 +35,7 @@ if (form) {
 
 // --- 💬 Botón flotante de WhatsApp ---
 const whatsappBtn = document.createElement('a');
-whatsappBtn.href = "https://wa.me/51987654321?text=Hola%20Pollería%20El%20Sabrosito%2C%20quiero%20hacer%20un%20pedido!";
+whatsappBtn.href = "https://wa.me/921584279?text=Hola%20Pollería%20El%20Sabrosito%2C%20quiero%20hacer%20un%20pedido!";
 whatsappBtn.target = "_blank";
 whatsappBtn.innerHTML = "💬";
 whatsappBtn.title = "Chatea con nosotros";
