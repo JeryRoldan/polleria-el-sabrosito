@@ -16,3 +16,10 @@ header {
   border-bottom: 1px solid #eee;
   padding: .5rem 0;
 }
+
+.logo {
+  width: 100px;          /* tamaño del logo */
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;   /* centrado y pequeño espacio inferior */
+}
