@@ -5,9 +5,7 @@ body {
   color: #333;
 }
 
-/* ===========================
-   HEADER + LOGO + NAV
-=========================== */
+/* === HEADER === */
 header {
   background: #c62828;
   color: white;
@@ -15,10 +13,10 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap; /* para que se adapte en pantallas pequeñas */
+  flex-wrap: wrap;
 }
 
-/* contenedor logo + título */
+/* contenedor del logo y título alineado a la izquierda */
 .logo-titulo {
   display: flex;
   align-items: center;
@@ -26,25 +24,24 @@ header {
   gap: 10px;
 }
 
-/* logo más pequeño y encajado */
+/* logo más pequeño y ajustado */
 .logo {
-  width: 40px;       /* tamaño más reducido */
-  height: 40px;
-  object-fit: contain; /* se adapta sin deformarse */
-  border-radius: 50%;  /* opcional si quieres que se vea circular */
+  width: 65px;        /* ajusta el tamaño a gusto (50-70px es ideal) */
+  height: 65px;
+  object-fit: contain;
+  border-radius: 10px; /* o usa 50% si quieres que se vea redondo */
 }
 
 /* título */
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   margin: 0;
 }
 
-/* navegación */
+/* navegación alineada a la derecha */
 nav {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 nav a {
@@ -58,35 +55,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* ===========================
-   MENÚ
-=========================== */
-.menu-item {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #eee;
-  padding: .5rem 0;
-}
-
-/* ===========================
-   RESPONSIVE
-=========================== */
-@media (max-width: 600px) {
+/* === RESPONSIVE (celulares) === */
+@media (max-width: 700px) {
   header {
     flex-direction: column;
     align-items: flex-start;
   }
 
   nav {
-    margin-top: 0.5rem;
+    margin-top: 10px;
+    flex-wrap: wrap;
   }
 
   .logo {
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
   }
 
   header h1 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
+
