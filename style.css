@@ -172,3 +172,55 @@ footer {
     font-size: 1.3rem;
   }
 }
+
+/* === BOTÓN FLOTANTE WHATSAPP === */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  background: #25D366;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.35);
+}
+
+.whatsapp-icon {
+  width: 34px;   /* 🔹 Ícono más grande */
+  height: 34px;
+  object-fit: contain;
+}
+
+/* Animación de “latido” */
+@keyframes pulse {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0.4); }
+  70% { transform: scale(1.05); box-shadow: 0 0 0 8px rgba(37,211,102,0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+}
+
+/* Ajuste en pantallas pequeñas */
+@media (max-width: 600px) {
+  .whatsapp-btn {
+    width: 45px;
+    height: 45px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-icon {
+    width: 25px;   /* 🔹 También un poco más grande en móvil */
+    height: 25px;
+  }
+}
+
